@@ -359,7 +359,7 @@
 
             try {
                 const payload = { contents: [{ parts: contentParts }] };
-                const apiUrl = `http://abc813de4d58:3000/api/gemini`;
+                const apiUrl = `http://https://smart-ocr-backend.glitch.me/api/gemini`;
                 const response = await fetch(apiUrl, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
                 if (!response.ok) throw new Error(`API request failed with status ${response.status}`);
                 const result = await response.json();
